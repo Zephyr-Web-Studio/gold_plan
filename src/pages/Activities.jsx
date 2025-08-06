@@ -54,19 +54,19 @@ const Activities = () => {
       title: "Annual Sports Day",
       date: "December 15, 2023",
       description: "A day filled with athletic competitions, team spirit, and celebration of sportsmanship.",
-      image: "/placeholder.svg?height=200&width=300"
+      image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       title: "Cultural Festival",
       date: "February 20, 2024",
       description: "Students showcase their talents in music, dance, drama, and various cultural performances.",
-      image: "/placeholder.svg?height=200&width=300"
+      image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       title: "Science Exhibition",
       date: "March 10, 2024",
       description: "Students present innovative science projects and experiments to demonstrate their learning.",
-      image: "/placeholder.svg?height=200&width=300"
+      image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     }
   ]
 
@@ -139,8 +139,8 @@ const Activities = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {events.map((event, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <img 
-                  src={event.image || "/placeholder.svg"} 
+                <img
+                  src={event.image || "/placeholder.svg"}
                   alt={event.title}
                   className="w-full h-48 object-cover"
                 />
@@ -183,23 +183,23 @@ const Activities = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Activity Gallery</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <img 
-              src="/placeholder.svg?height=200&width=200" 
+            <img
+              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
               alt="Sports Activity"
               className="w-full h-32 object-cover rounded-lg hover:scale-105 transition-transform cursor-pointer"
             />
-            <img 
-              src="/placeholder.svg?height=200&width=200" 
+            <img
+              src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
               alt="Music Activity"
               className="w-full h-32 object-cover rounded-lg hover:scale-105 transition-transform cursor-pointer"
             />
-            <img 
-              src="/placeholder.svg?height=200&width=200" 
+            <img
+              src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
               alt="Art Activity"
               className="w-full h-32 object-cover rounded-lg hover:scale-105 transition-transform cursor-pointer"
             />
-            <img 
-              src="/placeholder.svg?height=200&width=200" 
+            <img
+              src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
               alt="Science Activity"
               className="w-full h-32 object-cover rounded-lg hover:scale-105 transition-transform cursor-pointer"
             />
@@ -215,7 +215,7 @@ const Activities = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">Join Our Activities</h2>
           <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-            Discover your passion and develop new skills through our diverse range of 
+            Discover your passion and develop new skills through our diverse range of
             extracurricular activities and programs.
           </p>
           <button className="bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">

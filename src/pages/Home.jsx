@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { GraduationCap, Users, Award, BookOpen, Monitor, Heart } from 'lucide-react'
 
 const Home = () => {
@@ -8,6 +8,16 @@ const Home = () => {
     selectedClass: '',
     accommodation: 'without-hostel'
   })
+
+  const [counters, setCounters] = useState({
+    years: 0,
+    alumni: 0,
+    faculty: 0,
+    results: 0
+  })
+
+  const [isVisible, setIsVisible] = useState(false)
+  const statsRef = useRef(null)
 
   const handleInputChange = (e) => {
     const { name, value } = e.target
@@ -23,6 +33,51 @@ const Home = () => {
     // Handle form submission here
     alert('Thank you for your interest! We will contact you soon.')
   }
+
+  // Intersection Observer to trigger animation when section is visible
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !isVisible) {
+          setIsVisible(true)
+        }
+      },
+      { threshold: 0.3 }
+    )
+
+    if (statsRef.current) {
+      observer.observe(statsRef.current)
+    }
+
+    return () => observer.disconnect()
+  }, [isVisible])
+
+  // Counter animation effect
+  useEffect(() => {
+    if (!isVisible) return
+
+    const targets = { years: 25, alumni: 2000, faculty: 50, results: 100 }
+    const duration = 2000 // 2 seconds
+    const steps = 60 // 60 FPS
+    const increment = duration / steps
+
+    const timers = Object.keys(targets).map((key) => {
+      const target = targets[key]
+      const stepValue = target / steps
+      let current = 0
+
+      return setInterval(() => {
+        current += stepValue
+        if (current >= target) {
+          current = target
+          clearInterval(timers.find(timer => timer === this))
+        }
+        setCounters(prev => ({ ...prev, [key]: Math.floor(current) }))
+      }, increment)
+    })
+
+    return () => timers.forEach(timer => clearInterval(timer))
+  }, [isVisible])
 
   const features = [
     {
@@ -43,10 +98,10 @@ const Home = () => {
   ]
 
   const stats = [
-    { number: "25+", label: "Years of Excellence" },
-    { number: "2000+", label: "Alumni Network" },
-    { number: "50+", label: "Expert Faculty" },
-    { number: "100%", label: "Results" }
+    { key: 'years', number: counters.years, suffix: '+', label: "Years of Excellence" },
+    { key: 'alumni', number: counters.alumni, suffix: '+', label: "Alumni Network" },
+    { key: 'faculty', number: counters.faculty, suffix: '+', label: "Expert Faculty" },
+    { key: 'results', number: counters.results, suffix: '%', label: "Results" }
   ]
 
   return (
@@ -180,7 +235,7 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-gray-50">
+      <section ref={statsRef} className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Achievements</h2>
@@ -189,7 +244,9 @@ const Home = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-4xl font-bold text-primary-600 mb-2">{stat.number}</div>
+                <div className="text-4xl font-bold text-primary-600 mb-2">
+                  {stat.number}{stat.suffix}
+                </div>
                 <div className="text-gray-600">{stat.label}</div>
               </div>
             ))}
@@ -232,7 +289,7 @@ const Home = () => {
             </div>
             <div>
               <img 
-                src="/placeholder.svg?height=400&width=600" 
+                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
                 alt="Students Learning" 
                 className="rounded-lg shadow-lg w-full"
               />

@@ -186,13 +186,18 @@ const Contact = () => {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-8">Find Us</h2>
 
-              {/* Map Placeholder */}
-              <div className="bg-gray-200 h-64 rounded-lg mb-8 flex items-center justify-center">
-                <div className="text-center text-gray-600">
-                  <MapPin className="h-12 w-12 mx-auto mb-2" />
-                  <p>Interactive Map</p>
-                  <p className="text-sm">Godda, Jharkhand</p>
-                </div>
+              {/* Map */}
+              <div className="h-64 rounded-lg mb-8 overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57826.89451143842!2d87.21051299999999!3d24.8330529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f1c7d2f8c9a9a9%3A0x9b9b9b9b9b9b9b9b!2sGodda%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1691234567890!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Bharat Bharati Public School Location"
+                ></iframe>
               </div>
 
               {/* Department Contacts */}

@@ -44,25 +44,25 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
               <p className="text-lg text-gray-600 mb-6">
-                Established in 2000, Bharat Bharati Public School has been at the forefront of 
-                educational excellence in Godda, Jharkhand. What started as a vision to provide 
-                quality education has grown into a prestigious institution that has nurtured over 
+                Established in 2000, Bharat Bharati Public School has been at the forefront of
+                educational excellence in Godda, Jharkhand. What started as a vision to provide
+                quality education has grown into a prestigious institution that has nurtured over
                 2,000 successful alumni.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                Our school combines the rich heritage of Indian values with modern educational 
-                practices, creating an environment where students not only excel academically 
+                Our school combines the rich heritage of Indian values with modern educational
+                practices, creating an environment where students not only excel academically
                 but also develop into responsible global citizens.
               </p>
               <p className="text-lg text-gray-600">
-                With state-of-the-art facilities, experienced faculty, and a commitment to 
+                With state-of-the-art facilities, experienced faculty, and a commitment to
                 holistic development, we continue to set new benchmarks in education.
               </p>
             </div>
             <div>
-              <img 
-                src="/placeholder.svg?height=400&width=600" 
-                alt="School Building" 
+              <img
+                src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Modern School Building - Bharat Bharati Public School"
                 className="rounded-lg shadow-lg w-full"
               />
             </div>
@@ -76,8 +76,8 @@ const About = () => {
                 <h3 className="text-2xl font-bold text-gray-900">Our Mission</h3>
               </div>
               <p className="text-gray-600">
-                To provide comprehensive education that nurtures intellectual curiosity, 
-                moral values, and social responsibility, preparing students to become 
+                To provide comprehensive education that nurtures intellectual curiosity,
+                moral values, and social responsibility, preparing students to become
                 confident leaders and contributing members of society.
               </p>
             </div>
@@ -87,8 +87,8 @@ const About = () => {
                 <h3 className="text-2xl font-bold text-gray-900">Our Vision</h3>
               </div>
               <p className="text-gray-600">
-                To be recognized as a premier educational institution that transforms 
-                young minds through innovative teaching, character building, and 
+                To be recognized as a premier educational institution that transforms
+                young minds through innovative teaching, character building, and
                 holistic development, creating future leaders for a better world.
               </p>
             </div>
@@ -115,41 +115,41 @@ const About = () => {
             <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Our Leadership</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center">
-                <img 
-                  src="/placeholder.svg?height=200&width=200" 
-                  alt="Principal" 
+                <img
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                  alt="Principal - Dr. Rajesh Kumar"
                   className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
                 />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Dr. Rajesh Kumar</h3>
                 <p className="text-primary-600 font-medium mb-2">Principal</p>
                 <p className="text-gray-600 text-sm">
-                  With over 25 years of experience in education, Dr. Kumar leads our 
+                  With over 25 years of experience in education, Dr. Kumar leads our
                   institution with vision and dedication.
                 </p>
               </div>
               <div className="text-center">
-                <img 
-                  src="/placeholder.svg?height=200&width=200" 
-                  alt="Vice Principal" 
+                <img
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                  alt="Vice Principal - Mrs. Priya Sharma"
                   className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
                 />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Mrs. Priya Sharma</h3>
                 <p className="text-primary-600 font-medium mb-2">Vice Principal</p>
                 <p className="text-gray-600 text-sm">
-                  An experienced educator with expertise in curriculum development 
+                  An experienced educator with expertise in curriculum development
                   and student welfare.
                 </p>
               </div>
               <div className="text-center">
-                <img 
-                  src="/placeholder.svg?height=200&width=200" 
-                  alt="Academic Director" 
+                <img
+                  src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                  alt="Academic Director - Mr. Amit Singh"
                   className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
                 />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Mr. Amit Singh</h3>
                 <p className="text-primary-600 font-medium mb-2">Academic Director</p>
                 <p className="text-gray-600 text-sm">
-                  Specializes in innovative teaching methodologies and academic 
+                  Specializes in innovative teaching methodologies and academic
                   excellence initiatives.
                 </p>
               </div>

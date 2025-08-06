@@ -10,11 +10,9 @@ const Footer = () => {
           {/* School Info */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <img 
-                src="/placeholder.svg?height=40&width=40" 
-                alt="BBPS Logo" 
-                className="h-10 w-10"
-              />
+              <div className="bg-primary-600 text-white rounded-full h-10 w-10 flex items-center justify-center">
+                <span className="text-sm font-bold">BB</span>
+              </div>
               <div>
                 <h3 className="text-lg font-bold">BHARAT BHARATI</h3>
                 <p className="text-sm text-gray-300">PUBLIC SCHOOL</p>
@@ -79,7 +77,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-sm text-gray-300">
-            © 2024 Bharat Bharati Public School. All rights reserved.
+            © 2025 Bharat Bharati Public School. All rights reserved.
           </p>
         </div>
       </div>

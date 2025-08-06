@@ -17,92 +17,92 @@ const Gallery = () => {
   const images = [
     {
       id: 1,
-      src: "/placeholder.svg?height=300&width=400",
+      src: "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       alt: "School Building",
       category: "campus",
       title: "Main School Building"
     },
     {
       id: 2,
-      src: "/placeholder.svg?height=300&width=400",
+      src: "https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       alt: "Classroom",
       category: "academics",
       title: "Modern Classroom"
     },
     {
       id: 3,
-      src: "/placeholder.svg?height=300&width=400",
+      src: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       alt: "Sports Day",
       category: "sports",
       title: "Annual Sports Day"
     },
     {
       id: 4,
-      src: "/placeholder.svg?height=300&width=400",
+      src: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       alt: "Cultural Festival",
       category: "cultural",
       title: "Cultural Festival"
     },
     {
       id: 5,
-      src: "/placeholder.svg?height=300&width=400",
+      src: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       alt: "Science Lab",
       category: "academics",
       title: "Science Laboratory"
     },
     {
       id: 6,
-      src: "/placeholder.svg?height=300&width=400",
+      src: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       alt: "Library",
       category: "campus",
       title: "School Library"
     },
     {
       id: 7,
-      src: "/placeholder.svg?height=300&width=400",
+      src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       alt: "Basketball",
       category: "sports",
       title: "Basketball Court"
     },
     {
       id: 8,
-      src: "/placeholder.svg?height=300&width=400",
+      src: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       alt: "Assembly",
       category: "events",
       title: "Morning Assembly"
     },
     {
       id: 9,
-      src: "/placeholder.svg?height=300&width=400",
+      src: "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       alt: "Computer Lab",
       category: "academics",
       title: "Computer Laboratory"
     },
     {
       id: 10,
-      src: "/placeholder.svg?height=300&width=400",
+      src: "https://images.unsplash.com/photo-1710000736115-692bbb897fca?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       alt: "Playground",
       category: "campus",
       title: "School Playground"
     },
     {
       id: 11,
-      src: "/placeholder.svg?height=300&width=400",
+      src: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       alt: "Music Class",
       category: "cultural",
       title: "Music Room"
     },
     {
       id: 12,
-      src: "/placeholder.svg?height=300&width=400",
+      src: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       alt: "Graduation",
       category: "events",
       title: "Graduation Ceremony"
     }
   ]
 
-  const filteredImages = activeCategory === 'all' 
-    ? images 
+  const filteredImages = activeCategory === 'all'
+    ? images
     : images.filter(image => image.category === activeCategory)
 
   const openModal = (image) => {
@@ -134,11 +134,10 @@ const Gallery = () => {
               <button
                 key={category.id}
                 onClick={() => setActiveCategory(category.id)}
-                className={`px-6 py-2 rounded-full font-medium transition-colors ${
-                  activeCategory === category.id
+                className={`px-6 py-2 rounded-full font-medium transition-colors ${activeCategory === category.id
                     ? 'bg-primary-600 text-white'
                     : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-                }`}
+                  }`}
               >
                 {category.name}
               </button>
