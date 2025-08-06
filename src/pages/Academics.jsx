@@ -70,7 +70,7 @@ const Academics = () => {
           </div>
           <h1 className="text-5xl sm:text-6xl font-bold text-white mb-8 leading-tight">
             Academic
-            <span className="block bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-emerald-300 to-green-300 bg-clip-text text-transparent">
               Excellence
             </span>
           </h1>
@@ -170,7 +170,7 @@ const Academics = () => {
               <div key={index} className="group relative">
                 <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 text-center shadow-2xl border border-white/20 hover:bg-white/20 transition-all duration-500 hover:scale-105 hover:shadow-3xl">
                   <div className="flex justify-center mb-6">
-                    <div className="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl p-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <div className="bg-gradient-to-br from-emerald-400 to-green-500 rounded-2xl p-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
                       <div className="text-white">
                         {facility.icon}
                       </div>
@@ -180,7 +180,7 @@ const Academics = () => {
                   <p className="text-primary-100 leading-relaxed">{facility.description}</p>
 
                   {/* Decorative element */}
-                  <div className="absolute top-4 right-4 w-2 h-2 bg-yellow-400 rounded-full opacity-60 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute top-4 right-4 w-2 h-2 bg-emerald-400 rounded-full opacity-60 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
               </div>
             ))}
@@ -245,8 +245,8 @@ const Academics = () => {
                 <div className="space-y-6">
                   <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300">
                     <div className="flex items-center justify-between mb-3">
-                      <h4 className="font-bold text-yellow-300 text-lg">CBSE Class X Results 2023</h4>
-                      <div className="bg-yellow-400 text-primary-900 px-3 py-1 rounded-full text-sm font-bold">
+                      <h4 className="font-bold text-emerald-300 text-lg">CBSE Class X Results 2023</h4>
+                      <div className="bg-emerald-400 text-primary-900 px-3 py-1 rounded-full text-sm font-bold">
                         100%
                       </div>
                     </div>

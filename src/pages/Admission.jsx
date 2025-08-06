@@ -3,7 +3,7 @@ import { Calendar, FileText, CreditCard, CheckCircle, AlertCircle, Download } fr
 
 const Admission = () => {
   const [selectedClass, setSelectedClass] = useState('')
-  
+
   const admissionProcess = [
     {
       step: 1,
@@ -111,14 +111,13 @@ const Admission = () => {
               </table>
             </div>
           </div>
-          <div className="mt-6 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
-            <div className="flex items-start">
-              <AlertCircle className="h-5 w-5 text-yellow-600 mt-0.5 mr-3 flex-shrink-0" />
+
+          <div className="mt-6 p-4 bg-green-50 border border-green-200 rounded-lg">
+            <div className="flex">
+              <AlertCircle className="h-5 w-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" />
               <div>
-                <p className="text-sm text-yellow-800">
-                  <strong>Note:</strong> Fees are subject to revision. Additional charges may apply for 
-                  transportation, hostel, and extracurricular activities. Scholarships available for 
-                  meritorious students.
+                <p className="text-sm text-green-800">
+                  Please note that all fees are subject to change. Fee structure may vary based on facilities and services opted.
                 </p>
               </div>
             </div>
@@ -141,7 +140,7 @@ const Admission = () => {
                 ))}
               </div>
             </div>
-            
+
             <div className="bg-primary-50 p-8 rounded-lg">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Important Dates</h3>
               <div className="space-y-4">
@@ -162,7 +161,7 @@ const Admission = () => {
                   <span className="text-primary-600">April 30, 2024</span>
                 </div>
               </div>
-              
+
               <div className="mt-8 space-y-4">
                 <button className="btn-primary w-full flex items-center justify-center space-x-2">
                   <Download className="h-5 w-5" />
@@ -182,7 +181,7 @@ const Admission = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">Need Help with Admission?</h2>
           <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-            Our admission counselors are here to guide you through the process. 
+            Our admission counselors are here to guide you through the process.
             Contact us for any queries or assistance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
