@@ -139,7 +139,7 @@ const Home = () => {
                     required
                   />
                 </div>
-                
+
                 <div>
                   <label className="block text-white font-medium mb-2">Mobile Number</label>
                   <input
@@ -151,7 +151,7 @@ const Home = () => {
                     required
                   />
                 </div>
-                
+
                 <div>
                   <label className="block text-white font-medium mb-2">Select Class</label>
                   <select
@@ -179,7 +179,7 @@ const Home = () => {
                     <option value="12">Class XII</option>
                   </select>
                 </div>
-                
+
                 <div>
                   <label className="block text-white font-medium mb-2">Accommodation Preference</label>
                   <div className="flex space-x-4">
@@ -207,7 +207,7 @@ const Home = () => {
                     </label>
                   </div>
                 </div>
-                
+
                 <button type="submit" className="btn-secondary w-full">
                   Book Now
                 </button>
@@ -263,8 +263,8 @@ const Home = () => {
                 Excellence in Education Since 2000
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Bharat Bharati Public School has been a beacon of quality education in Godda, 
-                Jharkhand. We combine traditional values with modern teaching methodologies 
+                Bharat Bharati Public School has been a beacon of quality education in Godda,
+                Jharkhand. We combine traditional values with modern teaching methodologies
                 to create well-rounded individuals.
               </p>
               <div className="grid grid-cols-2 gap-4 mb-6">
@@ -288,9 +288,9 @@ const Home = () => {
               <button className="btn-primary">Learn More About Us</button>
             </div>
             <div>
-              <img 
-                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                alt="Students Learning" 
+              <img
+                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Students Learning"
                 className="rounded-lg shadow-lg w-full"
               />
             </div>

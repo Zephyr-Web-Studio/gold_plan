@@ -68,8 +68,8 @@ const Header = () => {
                 key={item.name}
                 to={item.href}
                 className={`px-4 py-2 rounded-md text-sm font-medium transition-all duration-300 ease-in-out transform hover:scale-105 relative ${location.pathname === item.href
-                    ? 'bg-secondary-800 text-white shadow-lg'
-                    : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900 hover:shadow-md'
+                  ? 'bg-secondary-800 text-white shadow-lg'
+                  : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900 hover:shadow-md'
                   }`}
               >
                 {item.name}
@@ -96,10 +96,10 @@ const Header = () => {
                   to={item.href}
                   onClick={() => setIsMenuOpen(false)}
                   className={`block px-4 py-2 rounded-md text-sm font-medium transition-all duration-300 ease-in-out transform hover:translate-x-2 hover:scale-105 ${location.pathname === item.href
-                      ? 'bg-secondary-800 text-white shadow-lg border-l-4 border-primary-600'
-                      : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'
+                    ? 'bg-secondary-800 text-white shadow-lg border-l-4 border-primary-600'
+                    : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'
                     }`}
-                  style={{ 
+                  style={{
                     animationDelay: `${index * 50}ms`,
                     animation: `fadeInUp 0.3s ease-out ${index * 50}ms both`
                   }}
